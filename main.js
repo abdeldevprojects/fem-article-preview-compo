@@ -1,4 +1,5 @@
 function myFunction() {
-    var popup = document.getElementById("myPopUp");
+    var popup = document.getElementById("shareon");
     popup.classList.toggle("show");
+    
 }

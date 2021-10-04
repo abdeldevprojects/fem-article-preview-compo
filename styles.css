@@ -91,7 +91,7 @@ body {
     padding: 10px;
 }
 
-.share-button a {
+.share-button #myPopUp {
     border: 1px solid #ffffff;
     background-color: hsl(210, 46%, 95%);
     border-radius: 50%;
@@ -102,15 +102,18 @@ body {
 
 .share-button-popup {
     position: absolute;
-    bottom: 50px;
+    visibility: hidden;
+    top: 270px;
+    right: 330px;
     display: flex;
     background-color: hsl(217, 19%, 35%);
     padding: 20px 35px;
     border-radius: 10px;
-    
+    z-index: 1;
 }
 
 /* The little Triangle below Social Media Pop Up*/
+
 .share-button-popup::after {
     content: "";
     position: absolute;
@@ -120,6 +123,12 @@ body {
     border-width: 10px;
     border-style: solid;
     border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.share-button .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
 .cta-share {
@@ -144,3 +153,14 @@ body {
     list-style: none;
 }
 
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
