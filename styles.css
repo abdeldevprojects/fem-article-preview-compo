@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    font-family: 'Manrope', sans-serif;
+*/
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+#card-container {
+    display: flex;
+    width: 60%;
+    max-height: 100%;
+    margin: 5rem auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+.image-side img{
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/* Content (Right Side )*/
+
+.content-side{
+    padding: 30px 90px 50px 100px;
+}
+
+.content-side .title {
+    color: hsl(217, 19%, 35%);
+    /* font-size: 35px; */
+}
+
+.content-side .paragraph {
+    color: hsl(214, 17%, 51%);
+    line-height: 1.5;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+
+/* Author Profile */
+.author-profile {
+    display: flex;
+    /* border: 1px solid black; */
+    margin-bottom: -20px;
+    padding-top: 20px;
+    
+}
+
+.author-image{
+    width: 10%;
+    border-radius: 50%;
+    
+}
+
+.author-info {
+    margin: 0px 50px 10px 20px;
+}
+
+.author-info .name {
+    color: hsl(217, 19%, 35%);
+    font-size: 18px;
+}
+
+.author-info .date {
+    color: hsl(212, 23%, 69%)
+}
+
+
+.share-button {
+   
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.share-button a {
+    border: 1px solid #ffffff;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 7px;
+}
+
+/* Social media plateform pop up */
+
+.share-button-popup {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    background-color: hsl(217, 19%, 35%);
+    padding: 20px 35px;
+    border-radius: 10px;
+    
+}
+
+/* The little Triangle below Social Media Pop Up*/
+.share-button-popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.cta-share {
+    color: hsl(212, 23%, 69%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.socialmedia-nav {
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 0 20px;
+    margin-right: -30px;
+}
+
+.socialmedia-nav li {
+    padding: 0 10px;
+}
+
+.socialmedia-nav li{
+    list-style: none;
+}
+
