@@ -251,8 +251,8 @@ body {
         position: absolute;
         visibility: hidden;
         top: 665px;
-        right: 20px;
-        width: 70%; 
+        right: 35px;
+        width: 64%; 
         display: flex;
         background-color: hsl(217, 19%, 35%);
         padding: 20px 35px;
